@@ -7,7 +7,7 @@ import { Plus, X, UploadCloud, Save, ChevronDown, ChevronRight, ExternalLink, Li
 
 export default function CreateAssignmentPage() {
   const router = useRouter();
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
